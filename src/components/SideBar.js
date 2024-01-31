@@ -5,15 +5,15 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { FaAddressCard, FaHome, FaShopify} from 'react-icons/fa';
+import { FaBars, FaHome, FaShopify} from 'react-icons/fa';
 const SideBar = () => {
   return (
     <>
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-dark mb-3">
           <Container>
-            <Navbar.Brand href="#" className='text-white'><FaShopify className='text-warning h1' id='shop'/><span className='h2 text-tertiary px-2'>SK</span> <span className='lead'>Shoping</span></Navbar.Brand>
-            <Navbar.Toggle className='button' aria-controls={`offcanvasNavbar-expand-${expand}`} ><FaAddressCard className='bar'/></Navbar.Toggle>
+            <Navbar.Brand href="#" className='text-white'><FaShopify className='text-warning h1' id='shop'/><span className='h2 text-tertiary px-2'>SK</span> <span className='lead fs-6'>Shoping</span></Navbar.Brand>
+            <Navbar.Toggle className='button' aria-controls={`offcanvasNavbar-expand-${expand}`} ><FaBars className='bar fs-2'/></Navbar.Toggle>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -42,6 +42,7 @@ const SideBar = () => {
                   />
                   <Button variant="btn btn-warning">Search</Button>
                 </Form>
+                
           </Container>
         </Navbar>
       ))}
