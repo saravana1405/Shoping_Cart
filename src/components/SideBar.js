@@ -12,7 +12,7 @@ const SideBar = () => {
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-dark mb-3">
           <Container>
-            <Navbar.Brand href="#" className='text-white'><FaShopify className='text-warning h1'/><span className='h2 text-tertiary px-2'>SK</span> <span className='lead'>Shoping</span></Navbar.Brand>
+            <Navbar.Brand href="#" className='text-white'><FaShopify className='text-warning h1' id='shop'/><span className='h2 text-tertiary px-2'>SK</span> <span className='lead'>Shoping</span></Navbar.Brand>
             <Navbar.Toggle className='button' aria-controls={`offcanvasNavbar-expand-${expand}`} ><FaAddressCard className='bar'/></Navbar.Toggle>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

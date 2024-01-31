@@ -12,7 +12,21 @@ link:hover{
   color: rgb(211, 208, 208);
   
 }
-
+#shop{
+   animation-name: shopicon;
+   animation-duration:3s;
+   animation-iteration-count: infinite;
+}
+@keyframes shopicon {
+  100%{
+    rotate: 0deg;
+  }
+ 
+  10%{
+    rotate: 90deg;
+  } 
+  
+}
 
 @media screen and (min-width : 600px){
   .d-flex{
