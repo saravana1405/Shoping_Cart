@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root{
+  --max : rgb(253, 136, 3);
+}
 link:hover{
   color: white;
 }
@@ -9,11 +13,48 @@ link:hover{
   position: relative;
   right: 8px;
   font-size:1.5em;
-  color: rgb(211, 208, 208);
+  color: var(--max);
   
+}
+#button{
+  background-color: var(--max);
+  font-weight:700;
+}
+#button:focus,
+#button:hover{
+  background-color: orangered;
+}
+.heading{
+  margin-left: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+}
+#link{
+  color:rgb(235, 234, 234);
+  font-weight: 600;
+}
+#link2{
+  color:rgb(235, 234, 234);
+  font-weight: 600;
+}
+#link3{
+  color:rgb(235, 234, 234);
+  font-weight: 600;
+}
+#back{
+  background-color:var(--max);
+}
+
+#shoping{
+  background-color: var(--max);
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: rgb(37, 37, 37);
+  font-weight: bold;
 }
 #shop{
    animation-name: shopicon;
+   color: rgb(253, 136, 3);
    animation-duration:3s;
    animation-iteration-count: infinite;
 }
@@ -33,4 +74,31 @@ link:hover{
     margin-left: 30px;
   }
 
+}
+@media screen and (max-width : 600px) {
+  #back2{
+    background-color:rgb(25, 25, 26);
+   
+  }
+  #link{
+    border-bottom: 1px solid rgb(138, 137, 137);
+  }
+  #link:focus,
+  #link:hover{
+    color: var(--max);
+  }
+  #link2{
+    border-bottom: 1px solid rgb(138, 137, 137);
+  }
+  #link2:focus,
+  #link2:hover{
+    color: var(--max);
+  }
+  #link3{
+    border-bottom: 1px solid rgb(138, 137, 137);
+  }
+  #link3:focus,
+  #link3:hover{
+    color: var(--max);
+  }
 }
