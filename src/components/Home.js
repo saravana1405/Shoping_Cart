@@ -8,7 +8,7 @@ const Home = () => {
     <SideBar />
    <div className="container">
       <h4 className='text-danger'>Let's Enjoy Your Shoping</h4>
-      <h6 className='text-primary'>Saravana App</h6>
+      <h6 className='text-primary text-bold'>Saravana App</h6>
    </div>
     </>
   )
